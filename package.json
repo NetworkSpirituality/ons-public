@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
   },
-  "homepage": "https://networkspirituality.github.io",
+  "homepage": "https://networkspirituality.github.io/ons-public",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf --glob dist/*",
