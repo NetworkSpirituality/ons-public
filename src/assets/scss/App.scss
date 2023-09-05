@@ -1,0 +1,26 @@
+$bg-color: yellow;
+$border-color: red;
+
+.app {
+  font-family: helvetica, arial, sans-serif;
+  padding: 2em;
+  border: 5px solid $border-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+  p {
+    background-color: $bg-color;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .consoleWindow {
+    flex: 1;  // This allows ConsoleWindow to grow and take up the remaining space
+    overflow: auto; // In case the content exceeds the container size
+  }
+}

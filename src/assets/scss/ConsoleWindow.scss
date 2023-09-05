@@ -1,0 +1,12 @@
+.consoleWindow {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: limegreen;
+    padding: 20px;
+    border-radius: 5px;
+    height: 30em; 
+    .consoleMessage {
+        margin-bottom: 5px;
+    }
+}
+  
