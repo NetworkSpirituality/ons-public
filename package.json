@@ -21,17 +21,17 @@
   "bugs": {
     "url": "https://github.com/vikpe/react-webpack-typescript-starter/issues"
   },
-  "homepage": "https://networkspirituality.github.io/public-website",
+  "homepage": "https://networkspirituality.github.io/ons-public",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
-    "clean-dist": "rimraf dist/*",
+    "clean-dist": "rimraf --glob dist/*",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet",
     "start": "yarn run start-dev",
     "start-dev": "webpack serve --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
     "test": "jest --coverage --watchAll --config=configs/jest.json",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -61,7 +61,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-refresh": "^0.14.0",
-    "rimraf": "^4.1.2",
+    "rimraf": "^5.0.1",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
@@ -84,6 +84,8 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "arwes": "^1.0.0-alpha.23",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "i": "^0.3.7",
+    "yarn": "^1.22.19"
   }
 }
